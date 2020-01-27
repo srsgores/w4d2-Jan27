@@ -39,10 +39,10 @@ Elements **all** are `Node`s; multiple elements are `NodeList` instances
 
 | Method (Singular) | Method (Plural) | Support |
 | --- | --- | :---: |
-| `document.getElementById` | `document.getElement**s**ById` | ✅|
-| `document.getElementByTagName`| `document.getElement**s**ByTagName` | ✅|
-| N/A | `document.getElement**s**ByClassName` | ✅|
-| `document.querySelector`| `document.querySelector**All**` | 𐄂|
+| `document.getElementById` | `document.getElementsById` | ✅|
+| `document.getElementByTagName`| `document.getElementsByTagName` | ✅|
+| N/A | `document.getElementsByClassName` | ✅|
+| `document.querySelector`| `document.querySelectorAll` | 𐄂|
 
 `document.querySelector` and `document.querySelectorAll` generally preferred
 
@@ -50,7 +50,7 @@ Elements **all** are `Node`s; multiple elements are `NodeList` instances
 
 Events **bubble up** unless otherwise prevented.
 
-!(https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/05/1495534508eventflow.svg)[event bubbling diagram]
+![event bubbling diagram](https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/05/1495534508eventflow.svg)
 
 #### `Node.prototype.addEventListener`
 
