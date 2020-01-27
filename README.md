@@ -38,6 +38,7 @@ Elements **all** are `Node`s; multiple elements are `NodeList` instances
 4. `document.querySelectorAll`
 
 | Method (Singular) | Method (Plural) | Support |
+| --- | --- | :---: |
 | `document.getElementById` | `document.getElement**s**ById` | ✅|
 | `document.getElementByTagName`| `document.getElement**s**ByTagName` | ✅|
 | N/A | `document.getElement**s**ByClassName` | ✅|
@@ -79,7 +80,6 @@ Equivalent to `document.querySelectorAll`, but works in all browsers.
 
 jQuery returns an *Array-like* object, whereas `document.querySelectorAll` returns a `NodeList`.
 
-
 **Vanilla JS**
 ```javascript
 const celebritiesContainer = document.querySelector(".celebrities");
@@ -88,7 +88,7 @@ const celebrities = celebritiesContainer.querySelectorAll(".celebrity"); // a No
 Array.from(celebrities).map((celebrity) => console.log(celebrity.innerText));
 ```
 
-**jQUery**
+**jQuery**
 ```javascript
 const $celebritiesContainer = $(".celebrities");
 const $celebrities = $celebritiesContainer.find(".celebrity"); // an array of Node(s)
@@ -137,7 +137,7 @@ const $listItem = $(`
 `).appendTo("body");
 ```
 
-Or place your template in a [`<template>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template) tag
+Or place your template in a [`<template>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/template) tag.
 
 ```html
 <template id="listItemTemplate">
@@ -160,7 +160,7 @@ $body.append($listItemHTML);
 
 `<slot>`s tell us where to place dynamic content.  **We can have as many `<slot>`s as we want**.
 
-`<template>` tags **don't get rendered**, so we don't need to hide them.  **We can have as many `<template>` tags as we want.
+`<template>` tags **don't get rendered**, so we don't need to hide them.  **We can have as many `<template>` tags as we want**.
 
 Use back-ticks when placing HTML in your JS for small HTML; use the `<template>` tag when you have complex markup.
 
@@ -192,7 +192,7 @@ Also, check out the `hidden` attribute.
 
 `$.ajax` most verbose
 
-`$.get` and `$.post` shorthands for `$.ajax({method: "GET"})` and `$.ajax({method: "POST", data: {}})` respectively
+`$.get` and `$.post` shorthands for `$.ajax({method: "GET"})` and `$.ajax({method: "POST", data: {}})` respectively.
 
 ### jQuery Conventions
 
@@ -205,6 +205,7 @@ Also, check out the `hidden` attribute.
 * Use jQuery or don't; choose one or the other
 * Load your `<script>` tags with `async defer`
 * Separate out your templates in `<template>` tags (opinion); separate HTML and JS
+* Build your HTML separately, without jQuery, only updating the DOM once
 
 ### Useful Links
 * [MDN: The DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
