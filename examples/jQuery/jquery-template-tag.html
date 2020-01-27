@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Vanilla JS Template Element</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="">
+	</head>
+	<body>
+		<template id="list-item-template" hidden>
+			<li>
+				<slot name="celebrity"></slot>
+			</li>
+		</template>
+		<main role="main">
+			<ul class="celebrity-list">
+				<li>
+					<progress>Loading celebrities</progress>
+				</li>
+			</ul>
+		</main>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js" async defer></script>
+		<script src="jquery-template-tag.js" async defer></script>
+	</body>
+</html>
