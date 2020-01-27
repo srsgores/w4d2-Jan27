@@ -39,7 +39,7 @@ Elements **all** are `Node`s; multiple elements are `NodeList` instances
 
 | Method (Singular) | Method (Plural) | Support |
 | --- | --- | :---: |
-| `document.getElementById` | `document.getElementsById` | ✅|
+| `document.getElementById` | N/A | ✅|
 | `document.getElementByTagName`| `document.getElementsByTagName` | ✅|
 | N/A | `document.getElementsByClassName` | ✅|
 | `document.querySelector`| `document.querySelectorAll` | 𐄂|
