@@ -188,12 +188,6 @@ Also, check out the `hidden` attribute.
 
 `.attr("attribute")` to get, and `.attr("attribute", value)` to set
 
-### AJAX
-
-`$.ajax` most verbose
-
-`$.get` and `$.post` shorthands for `$.ajax({method: "GET"})` and `$.ajax({method: "POST", data: {}})` respectively.
-
 ### jQuery Conventions
 
 * Prefix variables with the `$`: `$const $userMenu = $(".menu");`
