@@ -142,7 +142,7 @@ Or place your template in a [`<template>`](https://developer.mozilla.org/en-US/d
 ```html
 <template id="listItemTemplate">
 	<li>
-		<slot id="listItemSlot"></slot>
+		<slot name="list-item"></slot>
 	</li>
 </template>
 ```
@@ -197,7 +197,7 @@ Also, check out the `hidden` attribute.
 ### jQuery Conventions
 
 * Prefix variables with the `$`: `$const $userMenu = $(".menu");`
-* Load jQuery via a CDN or NPM
+* Load jQuery via a [CDN](https://developers.google.com/speed/libraries#jquery) or NPM
 * Check if `.length !== 0` in case the element doesn't exist
 * Start with your container element, then call `.find` subsequently on that element
 * Run your jQuery code in an [IIFE](https://codeburst.io/javascript-what-the-heck-is-an-immediately-invoked-function-expression-a0ed32b66c18)
