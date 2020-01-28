@@ -119,6 +119,14 @@ $(document).on("ready", function() {
 })
 ```
 
+Best:
+
+```javascript
+jQuery(function($) {
+	console.log("Ready");
+});
+```
+
 ### Dealing with HTML
 
 Roughly 5 options:
@@ -195,9 +203,9 @@ Also, check out the `hidden` attribute.
 * Check if `.length !== 0` in case the element doesn't exist
 * Start with your container element, then call `.find` subsequently on that element
 * Run your jQuery code in an [IIFE](https://codeburst.io/javascript-what-the-heck-is-an-immediately-invoked-function-expression-a0ed32b66c18)
-* Run your jQuery code in a `.on("ready")` callback
+* Run your jQuery code in a `.on("ready")` callback or equivalent
 * Use jQuery or don't; choose one or the other
-* Load your `<script>` tags with `async defer`
+* Load your `<script>` tags with `defer`
 * Separate out your templates in `<template>` tags (opinion); separate HTML and JS
 * Build your HTML separately, without jQuery, only updating the DOM once
 
