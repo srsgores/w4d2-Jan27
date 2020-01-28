@@ -114,18 +114,22 @@ $(document).ready(function() {
 Yes:
 
 ```javascript
-$(document).on("ready", function() {
-	console.log("ready");
-})
-```
-
-Best:
-
-```javascript
 jQuery(function($) {
 	console.log("Ready");
 });
 ```
+
+or:
+
+```javascript
+$(function($) {
+	console.log("ready");
+});
+```
+
+Note that **`$` is an _alias_ for `jQuery`; they are one and the same**.
+
+We pass in `$` explicity to ensure we have an instance of `jQuery` as opposed to a competing framework that may use the `$` (MooTools).
 
 ### Dealing with HTML
 
@@ -188,7 +192,7 @@ Use back-ticks when placing HTML in your JS for small HTML; use the `<template>`
 * `.addClass`
 * `.removeClass`
 
-The above use CSS transforms under the hood.  **Best to use `.toggleClass` or `.addClass`/`.removeClass` instead.
+The above use CSS transforms under the hood.  **Best to use `.toggleClass` or `.addClass`/`.removeClass` instead.**
 
 Also, check out the `hidden` attribute.
 
